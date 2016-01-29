@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Swagger REST Test for IBM Domino Plugin
+Bundle-SymbolicName: no.item.domino.swagger2.wink.test;singleton:=true
+Bundle-Version: 0.1
+Bundle-Activator: org.openntf.swagger.wink.test.plugin.Activator
+Bundle-Vendor: Item
+Require-Bundle: com.ibm.commons,
+ com.ibm.domino.osgi.core,
+ org.eclipse.equinox.http.registry;bundle-version="1.0.100",
+ org.apache.commons.logging;bundle-version="1.1.2",
+ com.ibm.pvc.webcontainer,
+ org.apache.wink;bundle-version="1.1.2",
+ org.eclipse.core.runtime,
+ no.item.domino.swagger2.wink;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Import-Package: com.ibm.commons.util,
+ javax.servlet;version="2.5.0",
+ javax.servlet.http;version="2.5.0",
+ javax.ws.rs.core,
+ lotus.domino
+Bundle-ClassPath: .,
+ WebContent/resources/
+Export-Package: org.openntf.swagger.wink.test,
+ org.openntf.swagger.wink.test.plugin,
+ org.openntf.swagger.wink.test.resources
