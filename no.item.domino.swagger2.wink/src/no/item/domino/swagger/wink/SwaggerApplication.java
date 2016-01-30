@@ -55,7 +55,8 @@ public class SwaggerApplication extends Application{
 	protected ObjectMapper getJacksonAndJaxbMapper()
 	{
 		ObjectMapper mapper = new ObjectMapper();
-		AnnotationIntrospector intr = new AnnotationIntrospectorPair(new JacksonAnnotationIntrospector(),
+		AnnotationIntrospector intr = new AnnotationIntrospectorPair(
+				new JacksonAnnotationIntrospector(),
 				new JaxbAnnotationIntrospector(mapper.getTypeFactory()) );
 		mapper.setAnnotationIntrospector(intr);
 		return mapper;
@@ -75,28 +76,4 @@ public class SwaggerApplication extends Application{
 		return null;
 	}
 	
-	
-	/**
-	 * Swagger config bean setter viktige parametre for swagger
-	 * 
-	 * @return BeanConfig 
-	 */
-//	protected BeanConfig configureSwagger20(){ 
-//		Util.debug("Swagger BeanConfig skal konfigureres", Application.class.getName() , "configureSwagger20()");
-//		BeanConfig cnfg = new BeanConfig();
-//		cnfg.setVersion("1.0.3");
-//		cnfg.setSchemes(new String[]{"http"});//new String[]{"http", "https"}
-//		cnfg.setHost("192.168.56.101"); //Host med protokoll
-//		cnfg.setBasePath("/swagger/v1"); //basepath
-//		cnfg.setResourcePackage("org.openntf.swagger.wink.test.resources"); //pakke som skal scannes for rest tjenester
-//		cnfg.setContact("Tine DEV"); //epost utvikler
-//		cnfg.setTitle("REST tjenester asas ...."); //beskrivelse
-//		cnfg.setDescription("REST tjenester.........."); //Tittel
-//		cnfg.setScan(true); //settes til true for å scanne etter ressurser
-//		cnfg.setPrettyPrint(true); //for å printe json pent
-//		Util.debug("Swagger BeanConfig er konfigurert", Application.class.getName()  , "configureSwagger20()");
-//		return cnfg;
-//	}
-
-
 }

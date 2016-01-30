@@ -22,17 +22,18 @@ public class Activator extends Plugin {
 	public void start(BundleContext context) throws Exception {
 		// Ensure that the service loader uses the right class
 		// See: http://www.mail-archive.com/discuss@restlet.tigris.org/msg07539.html
-//		ClassLoader oldcl = Thread.currentThread().getContextClassLoader();
-//		ClassLoader newcl = RuntimeDelegate.class.getClassLoader();
-//		
-//		Thread.currentThread().setContextClassLoader(newcl);
-//		try {
-//			RuntimeDelegate.setInstance(new RuntimeDelegateImpl());
-//		} catch(Exception e){
-//			e.printStackTrace();
-//		} finally {
-//			Thread.currentThread().setContextClassLoader(oldcl);
-//		}
+		ClassLoader oldcl = Thread.currentThread().getContextClassLoader();
+		ClassLoader newcl = RuntimeDelegate.class.getClassLoader();
+		
+		Thread.currentThread().setContextClassLoader(newcl);
+		try {
+			RuntimeDelegate.setInstance(new RuntimeDelegateImpl());
+		} catch(Exception e){
+			e.printStackTrace();
+		} finally {
+			Thread.currentThread().setContextClassLoader(oldcl);
+		}
+		
 		super.start(context);
 	}
 	

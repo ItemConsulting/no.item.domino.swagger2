@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="WebContent/resources"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/uri-template-0.9.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/httpclient-4.5.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/httpcore-4.4.3.jar"/>

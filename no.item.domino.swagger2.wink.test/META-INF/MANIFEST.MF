@@ -20,8 +20,7 @@ Import-Package: com.ibm.commons.util,
  javax.servlet.http;version="2.5.0",
  javax.ws.rs.core,
  lotus.domino
-Bundle-ClassPath: .,
- WebContent/resources/
+Bundle-ClassPath: .
 Export-Package: org.openntf.swagger.wink.test,
  org.openntf.swagger.wink.test.plugin,
  org.openntf.swagger.wink.test.resources
