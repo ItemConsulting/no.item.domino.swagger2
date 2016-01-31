@@ -28,8 +28,9 @@ public class Application extends SwaggerApplication {
 	
 	
 	private static BeanConfig getSwaggerBeanConfiguration(){ 
-				
+		
 		BeanConfig cnfg = new BeanConfig();
+	
 		cnfg.setVersion("");
 		cnfg.setSchemes(new String[]{"http","https"});
 		cnfg.setHost(""); 

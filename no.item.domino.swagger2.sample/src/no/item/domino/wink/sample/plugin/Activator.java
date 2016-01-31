@@ -20,8 +20,6 @@ public class Activator extends Plugin {
 
 	@Override
 	public void start(BundleContext context) throws Exception {
-		// Ensure that the service loader uses the right class
-		// See: http://www.mail-archive.com/discuss@restlet.tigris.org/msg07539.html
 		ClassLoader oldcl = Thread.currentThread().getContextClassLoader();
 		ClassLoader newcl = RuntimeDelegate.class.getClassLoader();
 		
@@ -45,7 +43,7 @@ public class Activator extends Plugin {
 	 */
 	@Override
 	public void stop(BundleContext bundleContext) throws Exception {
-		Util.debug("Stopping Swagger Test Plugin...", getClass().getName() ,"stop(BundleContext context)" );
+		Util.debug("Stopping Swagger Sample Plugin...", getClass().getName() ,"stop(BundleContext context)" );
 		Activator.context = null;
 	}
 	
