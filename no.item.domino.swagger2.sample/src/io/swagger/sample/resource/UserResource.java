@@ -33,7 +33,7 @@ public class UserResource {
 
   @POST
   @ApiOperation(value = "Create user",
-    notes = "This can only be done by the logged in user.",
+    notes = "xxxxThis can only be done by the logged in user.",
     position = 1)
   public Response createUser(
       @ApiParam(value = "Created user object", required = true) User user) {

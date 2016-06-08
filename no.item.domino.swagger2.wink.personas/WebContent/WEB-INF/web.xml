@@ -10,23 +10,21 @@
 			<param-name>javax.ws.rs.Application</param-name>
 			<param-value>org.openntf.swagger.wink.personas.Application</param-value>
 		</init-param>
+		<init-param>
+	        <param-name>propertiesLocation</param-name>
+	        <param-value>>/WEB-INF/wink-handler.properties</param-value>
+	    </init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	
-	
-	<servlet-mapping>
-		<servlet-name>ODADataServlet</servlet-name>
-		<url-pattern>oda</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>APIApplication</servlet-name>
-		<url-pattern>api/v1/*</url-pattern>
-	</servlet-mapping>
 	<servlet>
 		<servlet-name>restSdkAdmin</servlet-name>
 		<servlet-class>org.apache.wink.server.internal.servlet.AdminServlet</servlet-class>
 	</servlet>
+	<servlet-mapping>
+		<servlet-name>APIApplication</servlet-name>
+		<url-pattern>api/v1/*</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>restSdkAdmin</servlet-name>
 		<url-pattern>api/admin</url-pattern>

@@ -38,6 +38,7 @@ public class Application extends SwaggerApplication {
 		cnfg.setDescription(""); 
 		cnfg.setScan(true); 
 		cnfg.setPrettyPrint(true); 
+		
 		return cnfg;
 	}
  
