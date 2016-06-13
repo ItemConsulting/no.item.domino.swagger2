@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: RestPlugin
+Bundle-Name: Swagger for IBM Domino Plugin
 Bundle-SymbolicName: no.item.domino.swagger2.wink;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.5.0
 Bundle-Activator: no.item.domino.swagger.wink.Activator
 Bundle-Vendor: Item
 Require-Bundle: org.eclipse.core.runtime,
