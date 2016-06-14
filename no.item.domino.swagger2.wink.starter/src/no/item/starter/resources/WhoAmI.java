@@ -1,4 +1,4 @@
-package no.item.swagger.wink.resources;
+package no.item.starter.resources;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -7,20 +7,15 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-import org.openntf.swagger.wink.application.DataBase;
-import org.openntf.swagger.wink.util.JsonJavaUtil;
+import no.item.starter.application.DataBase;
 
 import com.ibm.commons.util.io.json.JsonJavaObject;
-
 
 @Path("/person")
 @Api(value="Person API")
 public class WhoAmI { 
-
-	JsonJavaUtil jsonJavaUtil = null;
 	
 	public WhoAmI() {
-		jsonJavaUtil = new JsonJavaUtil();
 	} 
 
 	@GET

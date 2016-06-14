@@ -1,10 +1,9 @@
-package org.openntf.swagger.wink.application;
+package no.item.starter.application;
 
 import org.openntf.domino.Database;
 import org.openntf.domino.Session;
 import org.openntf.domino.utils.Factory;
 import org.openntf.domino.utils.Factory.SessionType;
-import org.openntf.swagger.oda.OpenDominoApiConnection;
 
 
 public  class DataBase extends OpenDominoApiConnection{

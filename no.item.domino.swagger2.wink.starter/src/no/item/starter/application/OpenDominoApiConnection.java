@@ -1,4 +1,4 @@
-package org.openntf.swagger.oda;
+package no.item.starter.application;
 
 import org.openntf.domino.AutoMime;
 import org.openntf.domino.ext.Session.Fixes;

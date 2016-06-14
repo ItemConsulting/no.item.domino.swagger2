@@ -1,11 +1,10 @@
-package no.item.swagger.wink.plugin;
+package no.item.starter.plugin;
 import javax.ws.rs.ext.RuntimeDelegate;
 
 import no.item.domino.swagger.wink.util.Util;
 
 import org.apache.wink.common.internal.runtime.RuntimeDelegateImpl;
 import org.eclipse.core.runtime.Plugin;
-import org.openntf.domino.xsp.ODAPlatform;
 import org.osgi.framework.BundleContext;
 
 public class Activator extends Plugin {
@@ -34,9 +33,6 @@ public class Activator extends Plugin {
 		} finally {
 			Thread.currentThread().setContextClassLoader(oldcl);
 		}
-		
-		
-		ODAPlatform.start();
 
 		
 		super.start(context);
@@ -51,9 +47,7 @@ public class Activator extends Plugin {
 	@Override
 	public void stop(BundleContext bundleContext) throws Exception {
 		Util.debug("Stopping Plugin...", getClass().getName() ,"stop(BundleContext context)" );
-		Activator.context = null;
-		
-		ODAPlatform.stop();
+		Activator.context = null;		
 	}
 	
 	

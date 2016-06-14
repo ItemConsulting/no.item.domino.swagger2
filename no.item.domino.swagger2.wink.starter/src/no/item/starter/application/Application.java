@@ -1,11 +1,11 @@
-package org.openntf.swagger.wink.application;
+package no.item.starter.application;
 
 import io.swagger.jaxrs.config.BeanConfig;
 
 import java.util.Set;
 
 import no.item.domino.swagger.wink.SwaggerApplication;
-import no.item.swagger.wink.resources.WhoAmI;
+import no.item.starter.resources.WhoAmI;
 
 public class Application extends SwaggerApplication {
 	
@@ -29,7 +29,7 @@ public class Application extends SwaggerApplication {
 		cnfg.setSchemes(new String[]{"http","https"});
 		cnfg.setHost(""); 
 		cnfg.setBasePath("/starter/api/v1"); 
-		cnfg.setResourcePackage("no.item.swagger.wink.resources"); 
+		cnfg.setResourcePackage("no.item.starter.resources"); 
 		cnfg.setContact(""); 
 		cnfg.setTitle(""); 
 		cnfg.setDescription(""); 

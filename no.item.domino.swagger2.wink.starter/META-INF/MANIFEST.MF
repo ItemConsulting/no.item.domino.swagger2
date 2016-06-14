@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Swagger Wink REST Application Starter
+Bundle-Name: Swagger Wink REST Starter Application
 Bundle-SymbolicName: no.item.domino.swagger2.wink.starter;singleton:=true
 Bundle-Version: 0.1
-Bundle-Activator: no.item.swagger.wink.plugin.Activator
-Bundle-Vendor: Item
+Bundle-Activator: no.item.starter.plugin.Activator
+Bundle-Vendor: Item Consulting AS
 Require-Bundle: com.ibm.commons,
  com.ibm.domino.osgi.core,
  org.eclipse.equinox.http.registry;bundle-version="1.0.100",
@@ -26,6 +26,6 @@ Import-Package: com.ibm.commons.util,
  javax.ws.rs.core,
  lotus.domino
 Bundle-ClassPath: .
-Export-Package: no.item.swagger.wink.plugin,
- no.item.swagger.wink.resources,
- org.openntf.swagger.wink.application
+Export-Package: no.item.starter.application,
+ no.item.starter.plugin,
+ no.item.starter.resources
